@@ -1,0 +1,142 @@
+    /*--------------------------------------------------------------
+    >>> TABLE OF CONTENTS:
+    ----------------------------------------------------------------
+    # Reseting
+    # Variables
+    # text span and other font styles
+    # Slider
+    # sections
+    # Footer
+    # arrow
+    # Media Query
+    # Animations
+    # Others
+        ## Other 1
+        ## Other 2
+        ## Other 3
+
+
+    /*--------------------------------------------------------------
+    # Fonts
+    --------------------------------------------------------------*/
+    /* @import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');*/
+    
+    @font-face {
+        font-family: montseLight;
+        src: url(../css/fonts/Montserrat-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: montseRegular;
+        src: url(../css/fonts/Montserrat-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: montseBold;
+        src: url(../css/fonts/Montserrat-Bold.ttf);
+    }
+    /*--------------------------------------------------------------
+    # Reseting
+    --------------------------------------------------------------*/
+    
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /*--------------------------------------------------------------
+    # Variables
+    --------------------------------------------------------------*/
+    
+     :root {
+        --alpha-font-light: 'montseLight', sans-serif;
+        --alpha-font-regular: 'montseRegular', sans-serif;
+        --alpha-font-bold: 'montseBold', sans-serif;
+        --alpha-ligth-color: white;
+        --alpha-base: #141325;
+        --alpha-primary: #dd1d44;
+        --alpha-primary-high: #ff224f;
+        --main-bg-color: #141325;
+        --alpha-blue-light: #43425e;
+        --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
+        --alpha-darker: #333333;
+    }
+    /*--------------------------------------------------------
+  text span and other font styles
+  --------------------------------------------------------------*/
+    /* PRELOADER*/
+    
+    .preloader {
+        color: white;
+        display: flex;
+        z-index: 999;
+        background: var(--alpha-primary);
+        height: 100vh;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: all 2s;
+    }
+    
+    .opacity {
+        opacity: 0;
+    }
+    
+    .hide {
+        display: none!important;
+    }
+    /* ALERT OF OLD BROWSER*/
+    
+    .browserupgrade {
+        background: #000000a6;
+        height: 400px;
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        margin: 20%;
+    }
+    
+    body {
+        font-family: var( --alpha-font-regular);
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--alpha-font-bold);
+    }
