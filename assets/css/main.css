@@ -1,4 +1,4 @@
-    /*--------------------------------------------------------------
+/*--------------------------------------------------------------
     >>> TABLE OF CONTENTS:
     ----------------------------------------------------------------
     # Reseting
@@ -16,127 +16,243 @@
         ## Other 3
 
 
+
     /*--------------------------------------------------------------
+    # BreakPoints
+
+    --------------------------------------------------------------*/
+/*--------------------------------------------------------------
     # Fonts
     --------------------------------------------------------------*/
-    /* @import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');*/
-    
-    @font-face {
-        font-family: montseLight;
-        src: url(../css/fonts/Montserrat-Light.ttf);
-    }
-    
-    @font-face {
-        font-family: montseRegular;
-        src: url(../css/fonts/Montserrat-Regular.ttf);
-    }
-    
-    @font-face {
-        font-family: montseBold;
-        src: url(../css/fonts/Montserrat-Bold.ttf);
-    }
-    /*--------------------------------------------------------------
-    # Reseting
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');*/
+@font-face {
+  font-family: montseLight;
+  src: url(../css/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: montseRegular;
+  src: url(../css/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: montseBold;
+  src: url(../css/fonts/Montserrat-Bold.ttf);
+}
+
+/*--------------------------------------------------------------
+    # Reseting with boostrap 
     --------------------------------------------------------------*/
-    
-    html {
-        box-sizing: border-box;
-        font-size: 16px;
-    }
-    
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-    
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    ol,
-    ul {
-        margin: 0;
-        padding: 0;
-        font-weight: normal;
-    }
-    
-    ol,
-    ul {
-        list-style: none;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    /*--------------------------------------------------------------
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
     # Variables
     --------------------------------------------------------------*/
-    
-     :root {
-        --alpha-font-light: 'montseLight', sans-serif;
-        --alpha-font-regular: 'montseRegular', sans-serif;
-        --alpha-font-bold: 'montseBold', sans-serif;
-        --alpha-ligth-color: white;
-        --alpha-base: #141325;
-        --alpha-primary: #dd1d44;
-        --alpha-primary-high: #ff224f;
-        --main-bg-color: #141325;
-        --alpha-blue-light: #43425e;
-        --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
-        --alpha-darker: #333333;
-    }
-    /*--------------------------------------------------------
+:root {
+  --alpha-font-light: 'montseLight', sans-serif;
+  --alpha-font-regular: 'montseRegular', sans-serif;
+  --alpha-font-bold: 'montseBold', sans-serif;
+  --alpha-ligth-color: white;
+  --alpha-base: #141325;
+  --alpha-primary: #dd1d44;
+  --alpha-primary-high: #ff224f;
+  --main-bg-color: #141325;
+  --alpha-blue-light: #43425e;
+  --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
+  --alpha-darker: #333333;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
+
+/*--------------------------------------------------------
   text span and other font styles
   --------------------------------------------------------------*/
-    /* PRELOADER*/
-    
-    .preloader {
-        color: white;
-        display: flex;
-        z-index: 999;
-        background: var(--alpha-primary);
-        height: 100vh;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        opacity: 1;
-        transition: all 2s;
-    }
-    
-    .opacity {
-        opacity: 0;
-    }
-    
-    .hide {
-        display: none!important;
-    }
-    /* ALERT OF OLD BROWSER*/
-    
-    .browserupgrade {
-        background: #000000a6;
-        height: 400px;
-        color: white;
-        text-align: center;
-        font-size: 3em;
-        margin: 20%;
-    }
-    
-    body {
-        font-family: var( --alpha-font-regular);
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--alpha-font-bold);
-    }
+/* PRELOADER*/
+.preloader {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999;
+  background: var(--alpha-primary);
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.btn {
+  -webkit-transition: none;
+  transition: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.svg {
+  width: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.svg-inverted {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.svg-grey {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.btn-danger .svg {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+          filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+}
+
+.btn-danger:focus .svg {
+  -webkit-filter: invert(0%) sepia(100%) saturate(0%) contrast(200%);
+          filter: invert(0%) sepia(100%) saturate(0%) contrast(200%);
+}
+
+.btn-danger:hover {
+  color: gray;
+  background-color: white;
+  border-color: gray;
+}
+
+.btn-danger:hover .svg {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* ALERT OF OLD BROWSER*/
+.browserupgrade {
+  background: #000000a6;
+  height: 400px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin: 20%;
+}
+
+body {
+  font-family: var(--alpha-font-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--alpha-font-bold);
+}
+
+/* navbarPrincipal*/
+.navbar {
+  height: 100vh;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+#navbarPrincipal {
+  padding-right: 15%;
+  background: #090979;
+  background: -webkit-gradient(linear, left top, right top, color-stop(83%, white), color-stop(83%, #020606), color-stop(85%, rgba(0, 0, 0, 0.835154)));
+  background: linear-gradient(90deg, white 83%, #020606 83%, rgba(0, 0, 0, 0.835154) 85%);
+  height: 100%;
+}
+
+#navbarPrincipal:not(.show) {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+
+#navbarPrincipal.show {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav-header {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-name {
+  color: var(--alpha-primary);
+}
+
+@media (max-width: var(sm)) {
+  #navbarPrincipal {
+    background: #07070963;
+  }
+  #navbarPrincipal.show {
+    background: var(--main-bg-color);
+    color: white;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  #navbarPrincipal.show .nav-link {
+    color: white;
+  }
+}
+/*# sourceMappingURL=main.css.map */

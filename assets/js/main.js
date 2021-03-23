@@ -18,7 +18,7 @@ function loadingOff() {
 	}
 }
 window.onload = () => {
-	setTimeout(loadingOff, 100);
+	if (preloader !== null) setTimeout(loadingOff, 100);
 };
 
 /*--------------------------------------------------------------
