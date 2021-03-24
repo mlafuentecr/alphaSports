@@ -49,6 +49,11 @@ html {
   font-size: 16px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /*--------------------------------------------------------------
     # Variables
     --------------------------------------------------------------*/
@@ -61,6 +66,7 @@ html {
   --alpha-primary: #dd1d44;
   --alpha-primary-high: #ff224f;
   --main-bg-color: #141325;
+  --second-bg-color: #dd1d44;
   --alpha-blue-light: #43425e;
   --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
   --alpha-darker: #333333;
@@ -108,6 +114,50 @@ html {
   display: none !important;
 }
 
+.bg-principal {
+  background-color: var(--main-bg-color);
+}
+
+.btn-principal {
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.btn-principal:hover {
+  color: white;
+  background-color: var(--second-bg-color);
+}
+
+/*--------------------------------------------------------
+  MObile Toggle X 
+  --------------------------------------------------------------*/
+.navbar button[aria-expanded='true'] > span.close {
+  display: inline;
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 1;
+}
+
+.navbar button[aria-expanded='true'] > span.navbar-toggler-icon {
+  display: none;
+}
+
+.navbar button[aria-expanded='false'] > span.close {
+  display: none;
+}
+
+/*--------------------------------------------------------
+  MObile Menu
+  --------------------------------------------------------------*/
+#dropdown00 {
+  color: black;
+}
+
+.deposit-mobile .dropdown-menu {
+  left: -100%;
+}
+
 .btn {
   -webkit-transition: none;
   transition: none;
@@ -116,6 +166,111 @@ html {
   display: flex;
 }
 
+.navbar {
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+#navbarPrincipal:not(.show) {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+
+#navbarPrincipal.show {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  padding-right: 15%;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(83%, white), color-stop(83%, #020606), color-stop(85%, rgba(0, 0, 0, 0.835154)));
+  background: linear-gradient(90deg, white 83%, #020606 83%, rgba(0, 0, 0, 0.835154) 85%);
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-header {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-name {
+  color: var(--alpha-primary);
+}
+
+/*--------------------------------------------------------
+  SIDEBAR DESKTOP
+  --------------------------------------------------------------*/
+.sidebar.show {
+  height: 100vh;
+  width: 250px;
+}
+
+.sidebar.show .btn-principal:hover .svg {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+          filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+}
+
+.sidebar {
+  z-index: 99;
+}
+
+.sidebar .dropdown-item {
+  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--second-bg-color);
+}
+
+.sidebar .dropdown-menu {
+  width: 100%;
+}
+
+.sidebar .dropdown-toggle::after {
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  right: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #535264;
+}
+
+/*--------------------------------------------------------
+  SVG
+  --------------------------------------------------------------*/
 .svg {
   width: 20px;
   margin-right: 10px;
@@ -174,69 +329,6 @@ h4,
 h5,
 h6 {
   font-family: var(--alpha-font-bold);
-}
-
-/* navbarPrincipal*/
-.navbar {
-  height: 100vh;
-  -ms-flex-line-pack: start;
-      align-content: start;
-}
-
-.navbar .navbar-toggler {
-  border: none;
-}
-
-#navbarPrincipal {
-  padding-right: 15%;
-  background: #090979;
-  background: -webkit-gradient(linear, left top, right top, color-stop(83%, white), color-stop(83%, #020606), color-stop(85%, rgba(0, 0, 0, 0.835154)));
-  background: linear-gradient(90deg, white 83%, #020606 83%, rgba(0, 0, 0, 0.835154) 85%);
-  height: 100%;
-}
-
-#navbarPrincipal:not(.show) {
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%);
-}
-
-#navbarPrincipal.show {
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.nav-header {
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 1px solid #d5d5d5;
-}
-
-.navbar-brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profile-name {
-  color: var(--alpha-primary);
 }
 
 @media (max-width: var(sm)) {

@@ -55,6 +55,11 @@ html {
     font-size: 16px;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 
 /*--------------------------------------------------------------
     # Variables
@@ -69,6 +74,7 @@ html {
     --alpha-primary: #dd1d44;
     --alpha-primary-high: #ff224f;
     --main-bg-color: #141325;
+    --second-bg-color: #dd1d44;
     --alpha-blue-light: #43425e;
     --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
     --alpha-darker: #333333;
@@ -109,10 +115,143 @@ html {
     display: none !important;
 }
 
+.bg-principal {
+    background-color: var(--main-bg-color);
+}
+
+.btn-principal {
+    color: white;
+    background-color: var(--main-bg-color);
+    &:hover {
+        color: white;
+        background-color: var(--second-bg-color);
+    }
+}
+
+
+/*--------------------------------------------------------
+  MObile Toggle X 
+  --------------------------------------------------------------*/
+
+.navbar {
+    button[aria-expanded='true']>span.close {
+        display: inline;
+        color: black;
+        transition: all 0.2s;
+        opacity: 1;
+    }
+    button[aria-expanded='true']>span.navbar-toggler-icon {
+        display: none;
+    }
+    button[aria-expanded='false']>span.close {
+        display: none;
+    }
+}
+
+
+/*--------------------------------------------------------
+  MObile Menu
+  --------------------------------------------------------------*/
+
+#dropdown00 {
+    color: black;
+}
+
+.deposit-mobile {
+    .dropdown-menu {
+        left: -100%;
+    }
+}
+
 .btn {
     transition: none;
     display: flex;
 }
+
+.navbar {
+    align-content: start;
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+#navbarPrincipal:not(.show) {
+    transform: translateX(-110%);
+}
+
+#navbarPrincipal.show {
+    transition: all 0.1s;
+    transform: translateX(0%);
+    padding-right: 15%;
+    background: white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 83%, rgba(2, 6, 6, 1) 83%, rgba(0, 0, 0, 0.8351541300113796) 85%);
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-header {
+    background: white;
+    display: flex;
+    flex: 1;
+    align-content: flex-end;
+    justify-content: center;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-name {
+    color: var(--alpha-primary);
+}
+
+
+/*--------------------------------------------------------
+  SIDEBAR DESKTOP
+  --------------------------------------------------------------*/
+
+.sidebar.show {
+    height: 100vh;
+    width: 250px;
+    .btn-principal:hover {
+        .svg {
+            filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+        }
+    }
+}
+
+.sidebar {
+    z-index: 99;
+    .dropdown-item {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+    .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: var(--second-bg-color);
+    }
+    .dropdown-menu {
+        width: 100%;
+    }
+    .dropdown-toggle::after {
+        border-right: 0.3em solid transparent;
+        border-left: 0.3em solid transparent;
+        position: absolute;
+        right: 10px;
+        transform: rotate(-90deg);
+        color: #535264;
+    }
+}
+
+
+/*--------------------------------------------------------
+  SVG
+  --------------------------------------------------------------*/
 
 .svg {
     width: 20px;
@@ -172,52 +311,6 @@ h4,
 h5,
 h6 {
     font-family: var(--alpha-font-bold);
-}
-
-
-/* navbarPrincipal*/
-
-.navbar {
-    height: 100vh;
-    align-content: start;
-    .navbar-toggler {
-        border: none;
-    }
-}
-
-#navbarPrincipal {
-    padding-right: 15%;
-    background: rgb(9, 9, 121);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 83%, rgba(2, 6, 6, 1) 83%, rgba(0, 0, 0, 0.8351541300113796) 85%);
-    height: 100%;
-}
-
-#navbarPrincipal:not(.show) {
-    transform: translateX(-110%);
-}
-
-#navbarPrincipal.show {
-    transition: all 0.1s;
-    transform: translateX(0%);
-}
-
-.nav-header {
-    background: white;
-    display: flex;
-    flex: 1;
-    align-content: flex-end;
-    justify-content: center;
-    border-bottom: 1px solid #d5d5d5;
-}
-
-.navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-name {
-    color: var(--alpha-primary);
 }
 
 // @include media-breakpoint-up(sm) {}
