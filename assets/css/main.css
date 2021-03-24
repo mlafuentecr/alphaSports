@@ -128,6 +128,19 @@ body {
   background-color: var(--alpha-primary);
 }
 
+.text-red {
+  color: var(--alpha-primary);
+  margin: auto 10px;
+}
+
+.submenuTop .menu1-end,
+.submenuTop .menu2-end {
+  width: 250px;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+}
+
 /*--------------------------------------------------------
   MObile Toggle X 
   --------------------------------------------------------------*/
@@ -353,14 +366,17 @@ body {
     padding-left: 85px;
   }
   .submenuTop a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1080px) {
   .submenuTop a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
+}
+
+@media (max-width: 980px) {
   .submenuTop #dropdown02 {
     padding: 5px;
   }
@@ -369,6 +385,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .submenuTop .menu1-end,
+  .submenuTop .menu2-end {
+    width: 200px;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
   }
 }
 
