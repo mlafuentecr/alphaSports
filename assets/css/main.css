@@ -239,8 +239,73 @@ body {
           filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
 }
 
+.sideBarcollapse main,
+.sideBarcollapse .submenuTop {
+  padding-left: 85px;
+}
+
+.sideBarcollapse .sidebar {
+  width: 80px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.sideBarcollapse .sidebar span.text {
+  display: none;
+}
+
+.sideBarcollapse .sidebar .dropdown-toggle::after {
+  display: none;
+}
+
+.sideBarcollapse .sidebar .svg {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.sideBarcollapse .sidebar .brand-icon {
+  display: block !important;
+}
+
+.sideBarcollapse .sidebar .brand-normal {
+  display: none;
+}
+
+#collapseBar {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+  width: 80%;
+  color: #737285;
+}
+
+#collapseBar:hover {
+  color: white;
+}
+
+#collapseBar::after {
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  right: 10px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: #535264;
+}
+
 .sidebar {
+  -webkit-transition: all 0s;
+  transition: all 0s;
   z-index: 99;
+}
+
+.sidebar .brand-icon {
+  display: none;
+}
+
+.sidebar .svg {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+          filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
 }
 
 .sidebar .dropdown-item {

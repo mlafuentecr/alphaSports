@@ -169,13 +169,14 @@
     <!-- SideBar -->
     <div class="sidebar flex-column p-3 text-white bg-principal position-absolute show d-md-block d-none">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
-            <a class="navbar-brand m-0 p-0" href="#"><img src="./assets/images/alpha-logo-inverted.png" class="img-fluid" alt="Responsive image" alt="" /></a>
+            <a class="navbar-brand brand-normal m-0 p-0" href="#"><img src="./assets/images/alpha-logo-inverted.png" class="img-fluid" alt="Responsive image" alt="" /></a>
+            <a class="navbar-brand brand-icon m-0 p-0" href="#"><img src="./assets/images/alpha-logo-inverted-small.png" class="img-fluid" alt="Responsive image" alt="" /></a>
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
             <div class="dropdown my-2">
                 <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_soccer-24px.svg" alt="" />Soccer
+                    <img class="svg" src="./assets/images/sports_soccer-24px.svg" alt="" /><span class="text">Soccer</span>
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -187,20 +188,7 @@
             </div>
             <div class="dropdown my-2">
                 <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_football-24px.svg" alt="" />NFL
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
-                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> American Premier League</a>
-                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
-                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
-                </div>
-            </div>
-
-            <div class="dropdown my-2">
-                <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_hockey-24px.svg" alt="" />Hockey
+                    <img class="svg" src="./assets/images/sports_football-24px.svg" alt="" /><span class="text">NFL</span>
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -213,7 +201,7 @@
 
             <div class="dropdown my-2">
                 <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" />Boxing
+                    <img class="svg" src="./assets/images/sports_hockey-24px.svg" alt="" /><span class="text">Hockey</span>
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -226,7 +214,20 @@
 
             <div class="dropdown my-2">
                 <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_tennis-24px.svg" alt="" />Tennis
+                    <img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" /><span class="text">Boxing</span>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
+                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> American Premier League</a>
+                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
+                    <a class="dropdown-item my-2" href="#"><img class="svg" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /> Major League Baseball</a>
+                </div>
+            </div>
+
+            <div class="dropdown my-2">
+                <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="svg" src="./assets/images/sports_tennis-24px.svg" alt="" /><span class="text">Tennis</span>
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -238,7 +239,7 @@
             </div>
             <div class="dropdown my-2">
                 <a class="btn btn-principal dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="svg" src="./assets/images/sports_volleyball-24px.svg" alt="" />Volleybal
+                    <img class="svg" src="./assets/images/sports_volleyball-24px.svg" alt="" /><span class="text">Volleybal</span>
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -249,62 +250,47 @@
                 </div>
             </div>
         </ul>
+        <a id="collapseBar" class="nav-link"><img class="svg" src="./assets/images/multiple_stop-24px.svg" alt="" /><span class="text"> Collapse Menu</span></a>
     </div>
     <!-- /.SideBar -->
-    <!-- Principal Menu Desktop -->
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline">
-            <a class="nav-link active" href="#">Dashboard</a>
-            <a class="nav-link" href="#">
-					Friends
-					<span class="badge badge-pill bg-light align-text-bottom">27</span>
-				</a>
-            <a class="nav-link" href="#">Explore</a>
-            <a class="nav-link" href="#">Suggestions</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-        </nav>
-    </div>
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline">
-            <a class="nav-link active" href="#">Dashboard</a>
-            <a class="nav-link" href="#">
-					Friends
-					<span class="badge badge-pill bg-light align-text-bottom">27</span>
-				</a>
-            <a class="nav-link" href="#">Explore</a>
-            <a class="nav-link" href="#">Suggestions</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-        </nav>
-    </div>
-    <!-- /.Principal Menu Desktop -->
-
-    <div class="container">
-        <main role="main">
-            <div class="jumbotron">
-                <div class="col-sm-8 mx-auto">
-                    <h1>Navbar examples</h1>
-                    <p>
-                        This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the
-                        <a href="/docs/4.3/examples/navbar-static/">top</a> and <a href="/docs/4.3/examples/navbar-fixed/">fixed top</a> examples.
-                    </p>
-                    <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
-                    <p>
-                        <a class="btn btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs »</a>
-                    </p>
-                </div>
-            </div>
-        </main>
+    <div class="submenuTop container-fluid mr-0 pr-0">
+        <!-- Principal Menu Desktop -->
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline">
+                <a class="nav-link active" href="#">Dashboard</a>
+                <a class="nav-link" href="#">
+						Friends
+						<span class="badge badge-pill bg-light align-text-bottom">27</span>
+					</a>
+                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link" href="#">Suggestions</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+            </nav>
+        </div>
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline">
+                <a class="nav-link active" href="#">Dashboard</a>
+                <a class="nav-link" href="#">
+						Friends
+						<span class="badge badge-pill bg-light align-text-bottom">27</span>
+					</a>
+                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link" href="#">Suggestions</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+            </nav>
+        </div>
+        <!-- /.Principal Menu Desktop -->
     </div>
 
-    <main role="main" class="container">
+    <main role="main" class="container-fluid mr-0 pr-0">
         <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
             <img class="mr-3" src="/docs/4.3/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48" />
             <div class="lh-100">

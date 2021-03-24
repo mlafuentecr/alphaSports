@@ -224,7 +224,60 @@ body {
     }
 }
 
+.sideBarcollapse main,
+.sideBarcollapse .submenuTop {
+    padding-left: 85px;
+}
+
+.sideBarcollapse .sidebar {
+    width: 80px;
+    transition: all 0.1s;
+    span.text {
+        display: none;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .svg {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .brand-icon {
+        display: block !important;
+    }
+    .brand-normal {
+        display: none;
+    }
+}
+
+#collapseBar {
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px;
+    width: 80%;
+    color: #737285;
+    &:hover {
+        color: white;
+    }
+    &::after {
+        border-right: 0.3em solid transparent;
+        border-left: 0.3em solid transparent;
+        position: absolute;
+        right: 10px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        color: #535264;
+    }
+}
+
 .sidebar {
+    transition: all 0s;
+    .brand-icon {
+        display: none;
+    }
+    .svg {
+        filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+    }
     z-index: 99;
     .dropdown-item {
         font-size: 14px;

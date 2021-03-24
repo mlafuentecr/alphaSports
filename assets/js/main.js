@@ -2,6 +2,8 @@
 Selects elements 
 --------------------------------------------------------------*/
 const preloader = document.querySelector('.preloader');
+const sidebar = document.querySelector('.sidebar');
+const sidebarCollapse = document.querySelector('#collapseBar');
 
 /*--------------------------------------------------------------
 Remove Loading
@@ -22,5 +24,9 @@ window.onload = () => {
 };
 
 /*--------------------------------------------------------------
-animate elements
+sidebarCollapse
 --------------------------------------------------------------*/
+sidebarCollapse.style.cursor = 'pointer';
+sidebarCollapse.addEventListener('click', () => {
+	document.body.classList.toggle('sideBarcollapse');
+});
