@@ -70,10 +70,6 @@ body {
   --alpha-blue-light: #43425e;
   --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
   --alpha-darker: #333333;
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
 }
 
 /*--------------------------------------------------------
@@ -128,10 +124,14 @@ body {
   background-color: var(--second-bg-color);
 }
 
+.dropdown-item:active {
+  background-color: var(--alpha-primary);
+}
+
 /*--------------------------------------------------------
   MObile Toggle X 
   --------------------------------------------------------------*/
-.navbar button[aria-expanded='true'] > span.close {
+.navbar button[aria-expanded='true'] > span.closeBar {
   display: inline;
   color: black;
   -webkit-transition: all 0.2s;
@@ -143,7 +143,7 @@ body {
   display: none;
 }
 
-.navbar button[aria-expanded='false'] > span.close {
+.navbar button[aria-expanded='false'] > span.closeBar {
   display: none;
 }
 
@@ -239,11 +239,6 @@ body {
           filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
 }
 
-.sideBarcollapse main,
-.sideBarcollapse .submenuTop {
-  padding-left: 85px;
-}
-
 .sideBarcollapse .sidebar {
   width: 80px;
   -webkit-transition: all 0.1s;
@@ -333,6 +328,50 @@ body {
   color: #535264;
 }
 
+/* TOP MENUS IN DESKTOP*/
+.submenuTop a {
+  color: black;
+  font-size: clamp(0.5rem, 1rem, 0.9rem);
+}
+
+.submenuTop a:hover {
+  color: var(--alpha-primary-high);
+}
+
+.submenuTop .btn {
+  font-size: 12px;
+  height: 30px;
+}
+
+.submenuTop .svg {
+  margin-left: 0px;
+}
+
+@media (min-width: 768px) {
+  .sideBarcollapse main,
+  .sideBarcollapse .submenuTop {
+    padding-left: 85px;
+  }
+  .submenuTop a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .submenuTop a {
+    font-size: 0.8rem;
+  }
+  .submenuTop #dropdown02 {
+    padding: 5px;
+  }
+  .submenuTop .nav > * {
+    padding: 0.5rem 0.1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /*--------------------------------------------------------
   SVG
   --------------------------------------------------------------*/
@@ -394,22 +433,5 @@ h4,
 h5,
 h6 {
   font-family: var(--alpha-font-bold);
-}
-
-@media (max-width: var(sm)) {
-  #navbarPrincipal {
-    background: #07070963;
-  }
-  #navbarPrincipal.show {
-    background: var(--main-bg-color);
-    color: white;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  #navbarPrincipal.show .nav-link {
-    color: white;
-  }
 }
 /*# sourceMappingURL=main.css.map */

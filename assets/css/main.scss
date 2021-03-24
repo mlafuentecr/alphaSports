@@ -78,13 +78,13 @@ body {
     --alpha-blue-light: #43425e;
     --alpha-gradient: 180deg, #0e4996 60%, #48b9ff 100%;
     --alpha-darker: #333333;
-    //Breackpoints
-    --sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
 }
 
+//Breackpoints sass
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 /*--------------------------------------------------------
   text span and other font styles
@@ -128,13 +128,17 @@ body {
     }
 }
 
+.dropdown-item:active {
+    background-color: var(--alpha-primary);
+}
+
 
 /*--------------------------------------------------------
   MObile Toggle X 
   --------------------------------------------------------------*/
 
 .navbar {
-    button[aria-expanded='true']>span.close {
+    button[aria-expanded='true']>span.closeBar {
         display: inline;
         color: black;
         transition: all 0.2s;
@@ -143,7 +147,7 @@ body {
     button[aria-expanded='true']>span.navbar-toggler-icon {
         display: none;
     }
-    button[aria-expanded='false']>span.close {
+    button[aria-expanded='false']>span.closeBar {
         display: none;
     }
 }
@@ -224,11 +228,6 @@ body {
     }
 }
 
-.sideBarcollapse main,
-.sideBarcollapse .submenuTop {
-    padding-left: 85px;
-}
-
 .sideBarcollapse .sidebar {
     width: 80px;
     transition: all 0.1s;
@@ -302,6 +301,54 @@ body {
 }
 
 
+/* TOP MENUS IN DESKTOP*/
+
+.submenuTop {
+    a {
+        color: black;
+        font-size: clamp(0.5rem, 1rem, 0.9rem);
+    }
+    a:hover {
+        color: var(--alpha-primary-high);
+    }
+    .btn {
+        font-size: 12px;
+        height: 30px;
+    }
+    .svg {
+        margin-left: 0px;
+    }
+}
+
+//FIx top bar desktop break menu
+@media (min-width: $md) {
+    .sideBarcollapse main,
+    .sideBarcollapse .submenuTop {
+        padding-left: 85px;
+    }
+    .submenuTop {
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .submenuTop {
+        a {
+            font-size: 0.8rem;
+        }
+        #dropdown02 {
+            padding: 5px;
+        }
+        .nav>* {
+            padding: 0.5rem 0.1rem;
+            justify-content: space-between;
+        }
+    }
+}
+
+
 /*--------------------------------------------------------
   SVG
   --------------------------------------------------------------*/
@@ -366,21 +413,18 @@ h6 {
     font-family: var(--alpha-font-bold);
 }
 
-// @include media-breakpoint-up(sm) {}
-@media (max-width: var(sm)) {
-    #navbarPrincipal {
-        background: #07070963;
-    }
-    #navbarPrincipal.show {
-        background: var(--main-bg-color);
-        color: white;
-        transition: all 0.1s;
-        transform: translateX(0%);
-        .nav-link {
-            color: white;
-        }
-    }
-}
-
-// @include media-breakpoint-up(lg) {}
-// @include media-breakpoint-up(xl) {}
+//@media (min-width: $md) {
+// @media (max-width: $sm) {
+//     #navbarPrincipal {
+//         background: #07070963;
+//     }
+//     #navbarPrincipal.show {
+//         background: var(--main-bg-color);
+//         color: white;
+//         transition: all 0.1s;
+//         transform: translateX(0%);
+//         .nav-link {
+//             color: white;
+//         }
+//     }
+// }

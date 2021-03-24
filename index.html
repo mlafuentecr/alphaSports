@@ -26,7 +26,7 @@
 		<![endif]-->
 </head>
 
-<body class="bg-light">
+<body class="bg-light sideBarcollapse">
     <!--[if lt IE 8]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -43,7 +43,7 @@
         <div class="nav-header d-flex justify-content-between">
             <button class="navbar-toggler collapsed col-3" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
-					<span class="my-1 mr-4 close">X</span>
+					<span class="closeBar">X</span>
 				</button>
             <a class="navbar-brand m-0 p-0" href="#"><img src="./assets/images/alpha-logo.png" class="img-fluid" alt="Responsive image" alt="" /></a>
             <div class="dropdown d-flex align-items-center col-3 deposit-mobile">
@@ -166,7 +166,7 @@
     </nav>
     <!-- /.Principal Menu Only Mobile -->
 
-    <!-- SideBar -->
+    <!-- SideBar DESKTOP-->
     <div class="sidebar flex-column p-3 text-white bg-principal position-absolute show d-md-block d-none">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
             <a class="navbar-brand brand-normal m-0 p-0" href="#"><img src="./assets/images/alpha-logo-inverted.png" class="img-fluid" alt="Responsive image" alt="" /></a>
@@ -253,42 +253,78 @@
         <a id="collapseBar" class="nav-link"><img class="svg" src="./assets/images/multiple_stop-24px.svg" alt="" /><span class="text"> Collapse Menu</span></a>
     </div>
     <!-- /.SideBar -->
-    <div class="submenuTop container-fluid mr-0 pr-0">
+
+    <!-- DESKTOP TOP MENU -->
+    <div class="submenuTop container-fluid mr-0 pr-0 d-none d-md-block">
         <!-- Principal Menu Desktop -->
+        <!-- Menu1 -->
         <div class="nav-scroller bg-white shadow-sm">
-            <nav class="nav nav-underline">
-                <a class="nav-link active" href="#">Dashboard</a>
-                <a class="nav-link" href="#">
-						Friends
-						<span class="badge badge-pill bg-light align-text-bottom">27</span>
-					</a>
-                <a class="nav-link" href="#">Explore</a>
-                <a class="nav-link" href="#">Suggestions</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
+            <nav class="nav nav-underline d-flex align-items-center">
+                <a class="nav-link active" href="#">Balance: $0</a>
+                <a class="nav-link" href="#">Pending: $0</a>
+                <a class="nav-link" href="#">Availble: $50.000</a>
+                <li class="nav-item dropdown show collapsed">
+                    <a class="nav-link dropdown-toggle d-flex flex-wrap align-items-center" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="flex-grow-1">Currency:</div>
+                        <div class="align-self-end">$(USD)</div>
+                    </a>
+                    <div class="dropdown-menu collapsed" aria-labelledby="dropdown02">
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">Dollar (USD):</div>
+                            <div class="">$</div>
+                        </div>
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">Euro (EUR):</div>
+                            <div class="">€</div>
+                        </div>
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">JPY (JP¥):</div>
+                            <div class="">¥</div>
+                        </div>
+                    </div>
+                </li>
+                <button type="button" class="btn btn-danger d-flex justify-content-center align-items-center">
+						<img class="svg svg-inverted" src="./assets/images/monetization_on-24px.svg" alt="" />
+						Make a deposit
+					</button>
+                <li class="nav-item dropdown show d-flex align-self-end ml-auto collapsed">
+                    <a class="nav-link dropdown-toggle d-flex flex-wrap align-items-center" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="p-2"><img class="pull-right img-responsive" src="./assets/images/avatar.png" width="32px" height="32px" /></div>
+                        <div class="p-2 flex-grow-1"><span class="profile-name">Sreve </span> Mitchel</div>
+                        <div class="align-self-stretch p-2 align-self-end spacer"></div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">Balance:</div>
+                            <div class="">$0</div>
+                        </div>
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">Pending:</div>
+                            <div class="">$0</div>
+                        </div>
+                        <div class="dropdown-item d-flex align-items-center">
+                            <div class="mr-auto">Available:</div>
+                            <div class="">$0</div>
+                        </div>
+                    </div>
+                </li>
             </nav>
         </div>
-        <div class="nav-scroller bg-white shadow-sm">
+        <!-- /.menu1 -->
+        <!-- menu2 -->
+        <div class="nav-scroller bg-white menu2 d-flex justify-content-md-start">
             <nav class="nav nav-underline">
-                <a class="nav-link active" href="#">Dashboard</a>
-                <a class="nav-link" href="#">
-						Friends
-						<span class="badge badge-pill bg-light align-text-bottom">27</span>
-					</a>
-                <a class="nav-link" href="#">Explore</a>
-                <a class="nav-link" href="#">Suggestions</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" href="#">BET HISTORY</a>
+                <a class="nav-link" href="#">OPEN WAGERS</a>
+                <a class="nav-link" href="#">ACCOUNT FIGURES</a>
+                <a class="nav-link" href="#">GRADED WAGERS</a>
+                <a class="nav-link" href="#">CASHIER</a>
             </nav>
         </div>
+        <!-- /. menu2 -->
         <!-- /.Principal Menu Desktop -->
     </div>
+    <!-- /.DESKTOP TOP MENU -->
 
     <main role="main" class="container-fluid mr-0 pr-0">
         <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
