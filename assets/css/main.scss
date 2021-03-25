@@ -87,6 +87,43 @@ $lg: 992px;
 $xl: 1200px;
 
 /*--------------------------------------------------------
+  Boostrap reddifine
+  --------------------------------------------------------------*/
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--alpha-primary);
+    color: white;
+}
+
+#pills-tab {
+    a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .active {
+        color: white;
+    }
+}
+
+#accordion {
+    font-size: 1rem;
+    .btn-link {
+        font-weight: lighter;
+        color: gray;
+    }
+    .btn-link:hover {
+        color: black;
+        text-decoration: none;
+    }
+    .svg {
+        filter: sepia(100%) saturate(0%) contrast(200%);
+    }
+}
+
+
+/*--------------------------------------------------------
   text span and other font styles
   --------------------------------------------------------------*/
 
@@ -126,6 +163,10 @@ $xl: 1200px;
         color: white;
         background-color: var(--second-bg-color);
     }
+}
+
+.btn-strech {
+    padding: 5px 25px !important;
 }
 
 .dropdown-item:active {
