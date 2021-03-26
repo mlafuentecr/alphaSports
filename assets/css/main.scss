@@ -208,6 +208,7 @@ $xl: 1200px;
   --------------------------------------------------------------*/
 
 .navbar {
+    position: fixed;
     button[aria-expanded='true']>span.closeBar {
         display: inline;
         color: black;
