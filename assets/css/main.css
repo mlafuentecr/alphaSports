@@ -52,7 +52,7 @@ html {
 
 html,
 body {
-  height: 100%;
+  overflow: auto;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -276,7 +276,6 @@ body {
           flex: 1;
   -ms-flex-positive: 1;
       flex-grow: 1;
-  min-height: 100vh;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -webkit-box-align: baseline;

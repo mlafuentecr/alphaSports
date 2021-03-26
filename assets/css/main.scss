@@ -58,7 +58,7 @@ html {
 
 html,
 body {
-    height: 100%;
+    overflow: auto;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -273,7 +273,6 @@ $xl: 1200px;
     display: flex;
     flex: 1;
     flex-grow: 1;
-    min-height: 100vh;
     align-content: flex-start;
     align-items: baseline;
     background-color: pink;
