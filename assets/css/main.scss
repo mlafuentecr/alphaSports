@@ -251,6 +251,7 @@ $xl: 1200px;
 
 #navbarPrincipal:not(.show) {
     transform: translateX(-110%);
+    position: absolute !important;
 }
 
 #navbarPrincipal.show {

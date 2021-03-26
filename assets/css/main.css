@@ -246,6 +246,7 @@ body {
 #navbarPrincipal:not(.show) {
   -webkit-transform: translateX(-110%);
           transform: translateX(-110%);
+  position: absolute !important;
 }
 
 #navbarPrincipal.show {
