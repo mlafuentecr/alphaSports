@@ -282,6 +282,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  background-color: pink;
 }
 
 .nav-header {
