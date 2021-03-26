@@ -257,7 +257,7 @@ $xl: 1200px;
 #navbarPrincipal.show {
     transition: all 0.1s;
     transform: translateX(0%);
-    padding-right: 15%;
+    padding-right: 150px;
     background: white;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 83%, rgba(2, 6, 6, 1) 83%, rgba(0, 0, 0, 0.8351541300113796) 85%);
     z-index: 99;
@@ -283,6 +283,10 @@ $xl: 1200px;
 
 .profile-name {
     color: var(--alpha-primary);
+}
+
+.navbar-nav {
+    height: 100vh;
 }
 
 
