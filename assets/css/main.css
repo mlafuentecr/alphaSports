@@ -183,6 +183,15 @@ body {
           justify-content: end !important;
 }
 
+.dropdownBetMobile .dropdown-menu {
+  left: -50px !important;
+}
+
+.dropdownBetMobile a {
+  color: black;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------
   MObile Toggle X 
   --------------------------------------------------------------*/
@@ -210,7 +219,7 @@ body {
 }
 
 .deposit-mobile .dropdown-menu {
-  left: -100%;
+  left: -50px;
 }
 
 .btn {

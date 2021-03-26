@@ -40,14 +40,14 @@
 
     <!-- Principal Menu Only Mobile -->
     <nav class="navbar navbar-light p-0 d-block d-md-none">
-        <div class="nav-header d-flex justify-content-between">
+        <div class="nav-header d-flex justify-content-between py-3">
             <button class="navbar-toggler collapsed col-3" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					<span class="closeBar">X</span>
 				</button>
             <a class="navbar-brand m-0 p-0" href="#"><img src="./assets/images/alpha-logo.png" class="img-fluid" alt="Responsive image" alt="" /></a>
             <div class="dropdown d-flex align-items-center col-3 deposit-mobile">
-                <a class="nav-link dropdown-toggle btn-strech" href="#" id="dropdown00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle btn-sm" href="#" id="dropdown00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="svg" src="./assets/images/offline_bolt-24px.svg" alt="Make a deposit" />
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdown00">
@@ -164,6 +164,31 @@
             </ul>
         </div>
     </nav>
+    <!--Balance  BETS Submenu Only Mobile -->
+    <div class="nav-scroller d-none d-sm-block d-md-none menu2Mobile col-12 p-2 border-bottom my-2">
+        <div class="row d-flex justify-content-start">
+            <div class="col-3 ml-2 align-items-center justify-content-center">
+                <p class="amount m-0 fs-3">Avaible:</p>
+                <p class="amount m-0 fs-2">$500.000</p>
+            </div>
+            <div class="col-3 ml-2 align-items-center justify-content-center">
+                <p class="amount m-0 fs-3">Balance:</p>
+                <p class="amount m-0 fs-2">$00.000</p>
+            </div>
+
+            <div class="border-left dropstart ml-auto d-flex flex-grow-1 justify-content-center dropdownBetMobile">
+                <div class="dropdown dropdown-menu-end-flex align-items-center">
+                    <a class="nav-link dropdown-toggle btn-sm" href="#" id="dropdownBetMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Straight </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBetMobile">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Balance  BETS Submenu Only Mobile -->
     <!-- /.Principal Menu Only Mobile -->
 
     <!-- SideBar DESKTOP-->
@@ -339,14 +364,14 @@
 
         <div class="bg-white menu2 d-flex justify-content-md-start text-muted breadcrumb">
             <h2 class="d-flex">Advanced</h2>
-            <button type="button" class="btn btn-danger p-4 d-flex align-items-center ml-auto p-0 m-0 btn-strech">continue</button>
+            <button type="button" class="btn btn-danger p-4 d-flex align-items-center ml-auto p-0 m-0 btn-sm">continue</button>
         </div>
 
         <!-- /.Principal Menu Desktop -->
     </div>
     <!-- /.DESKTOP TOP MENU -->
 
-    <main role="main" class="container-fluid mr-0 pr-0">
+    <main role="main" class="container-md mr-0 pr-0 mx-4">
         <!-- Pill Menu -->
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">

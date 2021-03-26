@@ -186,6 +186,16 @@ $xl: 1200px;
     }
 }
 
+.dropdownBetMobile {
+    .dropdown-menu {
+        left: -50px !important;
+    }
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
 
 /*--------------------------------------------------------
   MObile Toggle X 
@@ -217,7 +227,7 @@ $xl: 1200px;
 
 .deposit-mobile {
     .dropdown-menu {
-        left: -100%;
+        left: -50px;
     }
 }
 
