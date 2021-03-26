@@ -60,6 +60,12 @@ body {
     height: 100%;
 }
 
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #7c0b15;
+}
+
 
 /*--------------------------------------------------------------
     # Variables
@@ -266,6 +272,10 @@ $xl: 1200px;
     position: absolute;
 }
 
+.betSeccion {
+    background-color: red;
+}
+
 .nav-header {
     background: white;
     display: flex;
@@ -297,11 +307,6 @@ $xl: 1200px;
 .sidebar.show {
     height: 100vh;
     width: 250px;
-    .btn-principal:hover {
-        .svg {
-            filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
-        }
-    }
 }
 
 .sideBarcollapse .sidebar {
@@ -347,11 +352,23 @@ $xl: 1200px;
 
 .sidebar {
     transition: all 0s;
+    .btn-principal:hover {
+        .svg {
+            filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+        }
+    }
+    .dropdown>a {
+        .svg {
+            filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+        }
+    }
+    .dropdown-menu {
+        svg {
+            filter: none;
+        }
+    }
     .brand-icon {
         display: none;
-    }
-    .svg {
-        filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
     }
     z-index: 99;
     .dropdown-item {
@@ -505,18 +522,16 @@ h6 {
     font-family: var(--alpha-font-bold);
 }
 
-//@media (min-width: $md) {
-// @media (max-width: $sm) {
-//     #navbarPrincipal {
-//         background: #07070963;
-//     }
-//     #navbarPrincipal.show {
-//         background: var(--main-bg-color);
-//         color: white;
-//         transition: all 0.1s;
-//         transform: translateX(0%);
-//         .nav-link {
-//             color: white;
-//         }
-//     }
-// }
+
+/*--------------------------------------------------------
+ Seccions
+  --------------------------------------------------------------*/
+
+.seccion-bets {
+    .card {
+        img {
+            width: auto;
+            height: 25px;
+        }
+    }
+}

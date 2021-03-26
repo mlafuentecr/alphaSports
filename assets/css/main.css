@@ -54,6 +54,12 @@ body {
   height: 100%;
 }
 
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #7c0b15;
+}
+
 /*--------------------------------------------------------------
     # Variables
     --------------------------------------------------------------*/
@@ -264,6 +270,10 @@ body {
   position: absolute;
 }
 
+.betSeccion {
+  background-color: red;
+}
+
 .nav-header {
   background: white;
   display: -webkit-box;
@@ -306,11 +316,6 @@ body {
 .sidebar.show {
   height: 100vh;
   width: 250px;
-}
-
-.sidebar.show .btn-principal:hover .svg {
-  -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
-          filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
 }
 
 .sideBarcollapse .sidebar {
@@ -368,13 +373,23 @@ body {
   z-index: 99;
 }
 
-.sidebar .brand-icon {
-  display: none;
-}
-
-.sidebar .svg {
+.sidebar .btn-principal:hover .svg {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
           filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+}
+
+.sidebar .dropdown > a .svg {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+          filter: invert(100%) sepia(100%) saturate(0%) contrast(200%);
+}
+
+.sidebar .dropdown-menu svg {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.sidebar .brand-icon {
+  display: none;
 }
 
 .sidebar .dropdown-item {
@@ -523,5 +538,13 @@ h4,
 h5,
 h6 {
   font-family: var(--alpha-font-bold);
+}
+
+/*--------------------------------------------------------
+ Seccions
+  --------------------------------------------------------------*/
+.seccion-bets .card img {
+  width: auto;
+  height: 25px;
 }
 /*# sourceMappingURL=main.css.map */
