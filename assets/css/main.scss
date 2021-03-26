@@ -384,6 +384,12 @@ $xl: 1200px;
     }
 }
 
+@media (max-width: $md) {
+    .hide-md {
+        display: none;
+    }
+}
+
 //FIx top bar desktop break menu
 @media (min-width: $md) {
     .sideBarcollapse main,
