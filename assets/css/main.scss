@@ -414,6 +414,12 @@ $xl: 1200px;
 }
 
 @media (max-width: $md) {
+    .show-md {
+        display: none;
+    }
+}
+
+@media (min-width: $md) {
     .hide-md {
         display: none;
     }

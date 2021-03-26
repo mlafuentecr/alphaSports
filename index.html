@@ -179,9 +179,10 @@
             </div>
 
             <div class="border-left dropstart ml-auto d-flex flex-grow-1 justify-content-center dropdownBetMobile">
-                <div class="dropdown dropdown-menu-end-flex align-items-center">
-                    <a class="nav-link dropdown-toggle btn-sm" href="#" id="dropdownBetMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Straight </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownBetMobile">
+                <div class="dropdown dropdown-menu-end-flex align-items-center dropdown-menu-bet">
+                    <a class="nav-link dropdown-toggle btn-sm" href="#" id="dropdownBetMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-value="Straight"> Straight </a>
+                    <div class="dropdown-menu chooser" aria-labelledby="dropdownBetMobile">
+                        <a class="dropdown-item" href="#">Straight</a>
                         <a class="dropdown-item" href="#">Parlay</a>
                         <a class="dropdown-item" href="#">Teaser</a>
                         <a class="dropdown-item" href="#">If Bets</a>
@@ -191,9 +192,9 @@
         </div>
     </div>
     <!--  breadcrumb MObile -->
-    <div class="bg-white menu2 text-muted breadcrumb d-none d-sm-block d-md-none">
+    <div class="bg-white breadcrumbMobile hide-md text-muted breadcrumb">
         <p class="fs-4 col-12">Betting Wager</p>
-        <h2 class="fs-2 col-12">Premier League</h2>
+        <h2 class="fs-2 col-12 descriptionBet">Premier League</h2>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="SET ALL BET AMOUNTS" aria-label="SET ALL BET AMOUNTS" aria-describedby="basic-addon2" />
             <div class="input-group-append">
@@ -387,7 +388,7 @@
 
     <main role="main" class="container-md mr-0 pr-0 mx-4">
         <!-- Pill Menu -->
-        <ul class="nav nav-pills mb-3 mobile-pill hide-md" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3 mobile-pill show-md" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pill-straight-tab" data-toggle="pill" href="#pill-straight" role="tab" aria-controls="pill-straight" aria-selected="true">Straight</a>
             </li>
@@ -428,7 +429,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -662,7 +663,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -722,7 +723,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -782,7 +783,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -842,7 +843,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -901,49 +902,16 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
-                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
-                                                </div>
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
-                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
-                                                </div>
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
-                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1">
-													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
-													<span class="text">Major legue baseball</span>
-												</label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1">
-													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
-													<span class="text">Major legue baseball</span>
-												</label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                 </div>
                             </div>
@@ -1138,7 +1106,7 @@
                                     <div class="col-md-3 my-2">
                                         <div class="btn-group">
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League <br />Baseball
                                             </a>
                                             <div class="dropdown-menu">
                                                 <div class="custom-control px-5">
@@ -1359,49 +1327,16 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
-                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
-                                                </div>
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
-                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
-                                                </div>
-                                                <div class="custom-control px-5">
-                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
-                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1">
-													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
-													<span class="text">Major legue baseball</span>
-												</label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                     <div class="col-md-3 my-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
-                                            <label class="form-check-label" for="mlb1">
-													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
-													<span class="text">Major legue baseball</span>
-												</label>
-                                        </div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
                                     </div>
                                 </div>
                             </div>
