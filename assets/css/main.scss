@@ -59,6 +59,7 @@ html {
 html,
 body {
     overflow: auto;
+    min-height: 100vh;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -269,13 +270,10 @@ $xl: 1200px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 83%, rgba(2, 6, 6, 1) 83%, rgba(0, 0, 0, 0.8351541300113796) 85%);
     z-index: 99;
     width: 100%;
+    display: block;
     position: absolute;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    align-content: flex-start;
-    align-items: baseline;
-    background-color: pink;
+    height: auto;
+    background-color: green;
 }
 
 .nav-header {
@@ -295,10 +293,6 @@ $xl: 1200px;
 
 .profile-name {
     color: var(--alpha-primary);
-}
-
-.navbar-nav {
-    height: 100vh;
 }
 
 

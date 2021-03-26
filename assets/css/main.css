@@ -53,6 +53,7 @@ html {
 html,
 body {
   overflow: auto;
+  min-height: 100vh;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -267,21 +268,10 @@ body {
   background: linear-gradient(90deg, white 83%, #020606 83%, rgba(0, 0, 0, 0.835154) 85%);
   z-index: 99;
   width: 100%;
+  display: block;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  background-color: pink;
+  height: auto;
+  background-color: green;
 }
 
 .nav-header {
@@ -314,10 +304,6 @@ body {
 
 .profile-name {
   color: var(--alpha-primary);
-}
-
-.navbar-nav {
-  height: 100vh;
 }
 
 /*--------------------------------------------------------
