@@ -254,9 +254,7 @@ body {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   padding-right: 15%;
-  background: white;
-  background: -webkit-gradient(linear, left top, right top, color-stop(83%, white), color-stop(83%, #020606), color-stop(85%, rgba(0, 0, 0, 0.835154)));
-  background: linear-gradient(90deg, white 83%, #020606 83%, rgba(0, 0, 0, 0.835154) 85%);
+  background: rgba(128, 128, 128, 0.374);
   z-index: 99;
   width: 100%;
   height: 100vh;
