@@ -40,6 +40,11 @@
   src: url(../css/fonts/Montserrat-Bold.ttf);
 }
 
+main,
+.menu2Mobile {
+  display: none !important;
+}
+
 /*--------------------------------------------------------------
     # Reseting with boostrap 
     --------------------------------------------------------------*/
