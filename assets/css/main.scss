@@ -270,7 +270,12 @@ $xl: 1200px;
     z-index: 99;
     width: 100%;
     position: absolute;
-    min-height: 100% !important;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    min-height: 100vh;
+    align-content: flex-start;
+    align-items: baseline;
 }
 
 .nav-header {
