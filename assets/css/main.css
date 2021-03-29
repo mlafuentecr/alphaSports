@@ -54,6 +54,7 @@ html,
 body {
   overflow: auto;
   min-height: 100vh;
+  height: 100vh;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {

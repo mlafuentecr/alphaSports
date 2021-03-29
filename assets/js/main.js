@@ -14,13 +14,11 @@ const descMobileContChild = descMobileContParent.querySelectorAll('.tab-pane');
 
 const mobileLeftPanel = document.querySelector('#mod');
 let intViewportHeight = document.body.offsetHeight;
-
+const documentHight = document.body.scrollHeight;
 document.querySelector('.navbarMobile').addEventListener('click', () => {
-	console.log('click', navbarPrincipal);
 	if ((mobileLeftPanel.classList.contains = 'show')) {
-		console.log('si tienneee');
-		mobileLeftPanel.style.background = `red`;
-		mobileLeftPanel.setAttribute('style', `height:${intViewportHeight}px`);
+		console.log('si tienneee', intViewportHeight);
+		mobileLeftPanel.setAttribute('style', `height:${documentHight}px`);
 	}
 });
 
