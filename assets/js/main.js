@@ -13,16 +13,13 @@ const descMobileContParent = document.querySelector('#pills-tabContent');
 const descMobileContChild = descMobileContParent.querySelectorAll('.tab-pane');
 
 const mobileLeftPanel = document.querySelector('#mod');
-let intViewportHeight = document.body.offsetHeight;
 const documentHight = document.body.scrollHeight;
-document.querySelector('.navbarMobile').addEventListener('click', () => {
-	if ((mobileLeftPanel.classList.contains = 'show')) {
-		console.log('si tienneee', intViewportHeight);
-		mobileLeftPanel.setAttribute('style', `height:${documentHight}px`);
-	}
-});
 
-//Cambie el panel de bets
+//make menu height has document
+mobileLeftPanel.setAttribute('style', `height:${documentHight}px`);
+
+//Cambie el panel de bets salte entre pill pero en mobile en desktop funciona bien
+//pero en mobile utliza un drop down cuando lo seleciono alli cambia
 const showContent = function (itemCl) {
 	descMobileContChild.forEach(item => {
 		item.classList.remove('show');
