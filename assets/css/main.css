@@ -64,6 +64,10 @@ body {
   border-color: #7c0b15;
 }
 
+.custom-control {
+  margin: 10px 15px;
+}
+
 /*--------------------------------------------------------------
     # Variables
     --------------------------------------------------------------*/
@@ -600,6 +604,13 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 360px) {
+  .betTable .table-header span,
+  .betTable .table-body span {
+    font-size: 0.8rem;
+  }
 }
 
 .betTable .table-header .form-check,

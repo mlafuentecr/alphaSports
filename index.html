@@ -397,7 +397,7 @@
                 <a class="nav-link" id="pill-teaser-tab" data-toggle="pill" href="#pill-teaser" role="tab" aria-controls="pill-teaser" aria-selected="false">Teaser</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pill-teaser-tab" data-toggle="pill" href="#pill-ifbets" role="tab" aria-controls="pill-ifbets" aria-selected="false">If Bets</a>
+                <a class="nav-link" id="pill-ifbets-tab" data-toggle="pill" href="#pill-ifbets" role="tab" aria-controls="pill-ifbets" aria-selected="false">If Bets</a>
             </li>
         </ul>
         <!-- Pill Content  -->
@@ -429,7 +429,7 @@
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
                                                     <input type="checkbox" class="custom-control-input" id="checkMlb1" />
                                                     <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
@@ -663,7 +663,7 @@
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
                                                     <input type="checkbox" class="custom-control-input" id="checkMlb1" />
                                                     <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
@@ -723,7 +723,7 @@
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
                                                     <input type="checkbox" class="custom-control-input" id="checkMlb1" />
                                                     <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
@@ -783,7 +783,7 @@
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
                                                     <input type="checkbox" class="custom-control-input" id="checkMlb1" />
                                                     <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
@@ -843,7 +843,7 @@
                                             <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
                                                     <input type="checkbox" class="custom-control-input" id="checkMlb1" />
                                                     <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
@@ -884,6 +884,7 @@
                 </div>
             </div>
             <!-- /.Pill TAB 1 Straight -->
+
             <!--  Pill TAB 2 Parley -->
             <div class="tab-pane fade" id="pill-parlay" role="tabpanel" aria-labelledby="pill-parlay-tab">
                 <div id="accordion">
@@ -919,11 +920,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
-													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
-													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
+												<div class="custom-control">
+													<input type="checkbox" class="custom-control-input" id="checkbet1" />
+													<label class="custom-control-label" for="checkbet1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -932,11 +933,102 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
+													<input type="checkbox" class="custom-control-input" id="checkbet3" />
+													<label class="custom-control-label" for="checkbet3">+4 -120</label>
+												</div>
+												<div class="custom-control">
+													<input type="checkbox" class="custom-control-input" id="checkbet4" />
+													<label class="custom-control-label" for="checkbet4">+4 -122</label>
+												</div>
+											</div>
+										</span>
+                                </div>
+                                <div class="moneyline">
+                                    <span class="title mr-5 pr-2 d-md-none">Money LIne</span>
+                                    <span>
+											<div class="form-check d-flex flex-wrap p-0 m-0">
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</div>
+										</span>
+                                    <span>
+											<div class="form-check d-flex flex-wrap p-0 m-0">
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</div>
+										</span>
+                                </div>
+                                <div class="totalpoints">
+                                    <div class="form-check d-flex flex-wrap p-0 m-0">
+                                        <span class="title mr-5 pr-2 d-md-none">Total Points</span>
+                                        <span>
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</span>
+                                        <span>
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</span>
+                                    </div>
+                                </div>
+                                <div class="teamtotal">
+                                    <div class="form-check d-flex flex-wrap p-0 m-0">
+                                        <span class="title mr-5 pr-2 d-md-none">Team Total</span>
+                                        <span>
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</span>
+                                        <span>
+												<input class="form-check-input" type="checkbox" value="" id="mline" />
+												<label class="form-check-label" for="mline"> -175 </label>
+											</span>
+                                    </div>
+                                </div>
+                                <div class="more">
+                                    <span class="title mr-5 pr-2 d-md-none">More</span>
+                                    <span>+14</span>
+                                </div>
+                            </div>
+
+                            <!--  ROW bet Team1 -->
+                            <div class="table-body toogleBet d-flex flex-wrap bd-highlight">
+                                <div class="date">
+                                    <span class="title mr-5 pr-2 d-md-none">date</span>
+                                    <span class="dateDetail mr-2 pr-2">Jul 26</span><span class="time">3:40PM</span>
+                                </div>
+                                <div class="numberId">
+                                    <span class="title title mr-5 pr-2 d-md-none">#</span>
+                                    <span>224281</span><span>224281</span>
+                                </div>
+                                <div class="team mr-2 pr-2">
+                                    <span class="title mr-5 pr-2 d-md-none">Team</span>
+                                    <span><img src="./assets/images/logos/chel.png" height="20px" class="mr-1" alt=" " /> Brcelona</span>
+                                    <span><img src="./assets/images/logos/chel.png" height="20px" class="mr-1" alt=" " /> Manchester United</span>
+                                </div>
+                                <div class="spread">
+                                    <span class="title mr-5 pr-2 d-md-none">spread</span>
+                                    <span>
+											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
+											<div class="dropdown-menu">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
+													<input type="checkbox" class="custom-control-input" id="checkbet2" />
+													<label class="custom-control-label" for="checkbet2">+4 -122</label>
+												</div>
+											</div>
+										</span>
+                                    <span>
+											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
+											<div class="dropdown-menu">
+												<div class="custom-control">
+													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
+													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
+												</div>
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1010,11 +1102,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1023,11 +1115,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1101,11 +1193,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1114,102 +1206,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
-													<input type="checkbox" class="custom-control-input" id="checkbet2" />
-													<label class="custom-control-label" for="checkbet2">+4 -122</label>
-												</div>
-											</div>
-										</span>
-                                </div>
-                                <div class="moneyline">
-                                    <span class="title mr-5 pr-2 d-md-none">Money LIne</span>
-                                    <span>
-											<div class="form-check d-flex flex-wrap p-0 m-0">
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</div>
-										</span>
-                                    <span>
-											<div class="form-check d-flex flex-wrap p-0 m-0">
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</div>
-										</span>
-                                </div>
-                                <div class="totalpoints">
-                                    <div class="form-check d-flex flex-wrap p-0 m-0">
-                                        <span class="title mr-5 pr-2 d-md-none">Total Points</span>
-                                        <span>
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</span>
-                                        <span>
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</span>
-                                    </div>
-                                </div>
-                                <div class="teamtotal">
-                                    <div class="form-check d-flex flex-wrap p-0 m-0">
-                                        <span class="title mr-5 pr-2 d-md-none">Team Total</span>
-                                        <span>
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</span>
-                                        <span>
-												<input class="form-check-input" type="checkbox" value="" id="mline" />
-												<label class="form-check-label" for="mline"> -175 </label>
-											</span>
-                                    </div>
-                                </div>
-                                <div class="more">
-                                    <span class="title mr-5 pr-2 d-md-none">More</span>
-                                    <span>+14</span>
-                                </div>
-                            </div>
-
-                            <!--  ROW bet Team1 -->
-                            <div class="table-body toogleBet d-flex flex-wrap bd-highlight">
-                                <div class="date">
-                                    <span class="title mr-5 pr-2 d-md-none">date</span>
-                                    <span class="dateDetail mr-2 pr-2">Jul 27</span><span class="time">3:40PM</span>
-                                </div>
-                                <div class="numberId">
-                                    <span class="title title mr-5 pr-2 d-md-none">#</span>
-                                    <span>224281</span><span>224281</span>
-                                </div>
-                                <div class="team mr-2 pr-2">
-                                    <span class="title mr-5 pr-2 d-md-none">Team</span>
-                                    <span><img src="./assets/images/logos/chel.png" height="20px" class="mr-1" alt=" " /> Brcelona</span>
-                                    <span><img src="./assets/images/logos/chel.png" height="20px" class="mr-1" alt=" " /> Manchester United</span>
-                                </div>
-                                <div class="spread">
-                                    <span class="title mr-5 pr-2 d-md-none">spread</span>
-                                    <span>
-											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
-											<div class="dropdown-menu">
-												<div class="custom-control px-5">
-													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
-													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
-												</div>
-												<div class="custom-control px-5">
-													<input type="checkbox" class="custom-control-input" id="checkbet2" />
-													<label class="custom-control-label" for="checkbet2">+4 -122</label>
-												</div>
-											</div>
-										</span>
-                                    <span>
-											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
-											<div class="dropdown-menu">
-												<div class="custom-control px-5">
-													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
-													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
-												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1283,11 +1284,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1296,11 +1297,11 @@
                                     <span>
 											<a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> +4 -110 </a>
 											<div class="dropdown-menu">
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkMlb1" />
 													<label class="custom-control-label" for="checkMlb1">+4 -120</label>
 												</div>
-												<div class="custom-control px-5">
+												<div class="custom-control">
 													<input type="checkbox" class="custom-control-input" id="checkbet2" />
 													<label class="custom-control-label" for="checkbet2">+4 -122</label>
 												</div>
@@ -1358,64 +1359,63 @@
                 </div>
             </div>
             <!-- /. Pill TAB 2 Parley -->
+
             <!--  Pill TAB 3 taser  -->
-            <div class="tab-pane fade" id="pill-teaser " role="tabpanel " aria-labelledby="pill-teaser-tab ">
-                <div id="accordion ">
+            <div class="tab-pane fade" id="pill-teaser" role="tabpanel " aria-labelledby="pill-teaser-tab ">
+                <div id="accordion">
                     <div class="card">
-                        <div class="card-header" id="headingOne ">
+                        <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse " data-target="#collapseMlb1 " aria-expanded="true " aria-controls="collapseOne ">
-										<img class="svg" src="./assets/images/sports_soccer-24px.svg " alt=" " /><span class="text">Soccer</span>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMlb1" aria-expanded="true" aria-controls="collapseOne">
+										<img class="svg" src="./assets/images/sports_soccer-24px.svg" alt="" /><span class="text">Soccer</span>
 									</button>
                             </h5>
                         </div>
 
-                        <div id="collapseMlb1 " class="collapse show" aria-labelledby="headingOne " data-parent="#accordion ">
+                        <div id="collapseMlb1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox " value=" " id="mlb1 " />
-                                            <label class="form-check-label" for="mlb1 ">
-													<img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png " alt=" " /><span class="text">Major legue baseball</span>
-												</label>
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
                                         <div class="btn-group">
-                                            <a class="dropdown-toggle" type="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-                                                <img src="./assets/images/logos/mlb.png " class="mr-1" alt=" " />Major League Baseball
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
                                             </a>
-                                            <div class="dropdown-menu">
+                                            <div class="dropdown-menu p-2">
                                                 <div class="custom-control px-5">
-                                                    <input type="checkbox " class="custom-control-input" id="checkMlb1 " />
-                                                    <label class="custom-control-label" for="checkMlb1 ">OutRight Winner</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
                                                 </div>
                                                 <div class="custom-control px-5">
-                                                    <input type="checkbox " class="custom-control-input" id="checkMlb2 " />
-                                                    <label class="custom-control-label" for="checkMlb2 ">To win AFC coference</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
                                                 </div>
                                                 <div class="custom-control px-5">
-                                                    <input type="checkbox " class="custom-control-input" id="checkMlb3 " />
-                                                    <label class="custom-control-label" for="checkMlb3 ">To Win NFC conference</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox " value=" " id="mlb1 " />
-                                            <label class="form-check-label" for="mlb1 ">
-													<img class="mr-1" src="./assets/images/logos/chel.png " alt=" " />
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
 													<span class="text">Major legue baseball</span>
 												</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox " value=" " id="mlb1 " />
-                                            <label class="form-check-label" for="mlb1 ">
-													<img class="mr-1" src="./assets/images/logos/pml.png " alt=" " />
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
 													<span class="text">Major legue baseball</span>
 												</label>
                                         </div>
@@ -1425,162 +1425,414 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingTwo ">
+                        <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseBasket " aria-expanded="false " aria-controls="collapseTwo ">
-										<img class="svg" src="./assets/images/sports_basketball-24px.svg " alt=" " /><span class="text">Basketball</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBasket" aria-expanded="false" aria-controls="collapseTwo">
+										<img class="svg" src="./assets/images/sports_basketball-24px.svg" alt="" /><span class="text">Basketball</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseBasket " class="collapse" aria-labelledby="headingTwo " data-parent="#accordion ">
+                        <div id="collapseBasket" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_hockey-24px.svg " alt=" " /><span class="text">Hockey</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_hockey-24px.svg" alt="" /><span class="text">Hockey</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseThree " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseGolf " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/golf_course-24px.svg " alt=" " /><span class="text">Golf</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseGolf" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/golf_course-24px.svg" alt="" /><span class="text">Golf</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseGolf " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseGolf" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseCar " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/car-24px.svg " alt=" " /><span class="text">Auto Racing</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCar" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/car-24px.svg" alt="" /><span class="text">Auto Racing</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseCar " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseCar" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseMartial " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_mma-24px.svg " alt=" " /><span class="text">Martial Arts</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMartial" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" /><span class="text">Martial Arts</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseMartial " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseMartial" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseBox " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_mma-24px.svg " alt=" " /><span class="text">Boxing</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBox" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" /><span class="text">Boxing</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseBox " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseBox" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1590,193 +1842,478 @@
             </div>
             <!-- /. Pill TAB 3 taser  -->
             <!--  Pill TAB 4 if Bets -->
-            <div class="tab-pane fade" id="pill-ifbets " role="tabpanel " aria-labelledby="pill-ifbets-tab ">
-                <div id="accordion ">
+            <div class="tab-pane fade" id="pill-ifbets" role="tabpanel " aria-labelledby="pill-ifbets-tab ">
+                <div id="accordion">
                     <div class="card">
-                        <div class="card-header" id="headingOne ">
+                        <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse " data-target="#collapseMlb1 " aria-expanded="true " aria-controls="collapseOne ">
-										<img class="svg" src="./assets/images/sports_soccer-24px.svg " alt=" " /><span class="text">Soccer</span>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMlb1" aria-expanded="true" aria-controls="collapseOne">
+										<img class="svg" src="./assets/images/sports_soccer-24px.svg" alt="" /><span class="text">Soccer</span>
 									</button>
                             </h5>
                         </div>
 
-                        <div id="collapseMlb1 " class="collapse show" aria-labelledby="headingOne " data-parent="#accordion ">
+                        <div id="collapseMlb1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingTwo ">
+                        <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseBasket " aria-expanded="false " aria-controls="collapseTwo ">
-										<img class="svg" src="./assets/images/sports_basketball-24px.svg " alt=" " /><span class="text">Basketball</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBasket" aria-expanded="false" aria-controls="collapseTwo">
+										<img class="svg" src="./assets/images/sports_basketball-24px.svg" alt="" /><span class="text">Basketball</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseBasket " class="collapse" aria-labelledby="headingTwo " data-parent="#accordion ">
+                        <div id="collapseBasket" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_hockey-24px.svg " alt=" " /><span class="text">Hockey</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_hockey-24px.svg" alt="" /><span class="text">Hockey</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseThree " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseGolf " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/golf_course-24px.svg " alt=" " /><span class="text">Golf</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseGolf" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/golf_course-24px.svg" alt="" /><span class="text">Golf</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseGolf " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseGolf" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseCar " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/car-24px.svg " alt=" " /><span class="text">Auto Racing</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCar" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/car-24px.svg" alt="" /><span class="text">Auto Racing</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseCar " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseCar" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseMartial " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_mma-24px.svg " alt=" " /><span class="text">Martial Arts</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMartial" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" /><span class="text">Martial Arts</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseMartial " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseMartial" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree ">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse " data-target="#collapseBox " aria-expanded="false " aria-controls="collapseThree ">
-										<img class="svg" src="./assets/images/sports_mma-24px.svg " alt=" " /><span class="text">Boxing</span>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBox" aria-expanded="false" aria-controls="collapseThree">
+										<img class="svg" src="./assets/images/sports_mma-24px.svg" alt="" /><span class="text">Boxing</span>
 									</button>
                             </h5>
                         </div>
-                        <div id="collapseBox " class="collapse" aria-labelledby="headingThree " data-parent="#accordion ">
+                        <div id="collapseBox" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1"> <img class="mr-1" src="./assets/images/logos/PLA-logo-500x281.png" alt="" /><span class="text">Major legue baseball</span> </label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="btn-group">
+                                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/images/logos/mlb.png" class="mr-1" alt="" />Major League Baseball
+                                            </a>
+                                            <div class="dropdown-menu p-2">
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb1" />
+                                                    <label class="custom-control-label" for="checkMlb1">OutRight Winner</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb2" />
+                                                    <label class="custom-control-label" for="checkMlb2">To win AFC coference</label>
+                                                </div>
+                                                <div class="custom-control px-5">
+                                                    <input type="checkbox" class="custom-control-input" id="checkMlb3" />
+                                                    <label class="custom-control-label" for="checkMlb3">To Win NFC conference</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/chel.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 my-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo voluptates nesciunt eligendi magni reiciendis quod quo ullam consectetur maxime,
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mlb1" />
+                                            <label class="form-check-label" for="mlb1">
+													<img class="mr-1" src="./assets/images/logos/pml.png" alt="" />
+													<span class="text">Major legue baseball</span>
+												</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

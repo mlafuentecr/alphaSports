@@ -25,6 +25,7 @@ const showContent = function (itemCl) {
 		item.classList.remove('show');
 		item.classList.remove('active');
 	});
+	console.log(itemCl);
 	const itemToChange = document.querySelector(`${itemCl}`);
 	itemToChange.classList.add('show');
 	itemToChange.classList.add('active');
@@ -38,6 +39,7 @@ const descInit = function () {
 		if (item.className === 'dropdown-item') {
 			item.addEventListener('click', () => {
 				const name = item.innerHTML.toLowerCase().replace(' ', '');
+				console.log({ name });
 				showContent(`#pill-${name}`);
 				descMobileMenuParent.innerHTML = descTitle.innerHTML = item.innerHTML;
 			});
