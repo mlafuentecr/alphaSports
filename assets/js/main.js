@@ -11,7 +11,7 @@ const descMobileMenu = document.querySelector('.dropdownBetMobile');
 const descMobileItem = descMobileMenu.querySelectorAll('a');
 const descMobileContParent = document.querySelector('#pills-tabContent');
 const descMobileContChild = descMobileContParent.querySelectorAll('.tab-pane');
-
+const toogleBet = document.querySelectorAll('.toogleBet');
 const mobileLeftPanel = document.querySelector('#mod');
 const documentHight = document.body.scrollHeight;
 
@@ -30,7 +30,7 @@ const showContent = function (itemCl) {
 	itemToChange.classList.add('active');
 };
 
-//Cambie el panel al iniciar
+//Cambie el panel de bet  al iniciar
 const descInit = function () {
 	descTitle.innerHTML = descMobileMenuParent.innerHTML;
 	//Cuando Selecciono algo en el menu cambie el titulo y cambien el panel
@@ -61,7 +61,10 @@ function loadingOff() {
 	}
 }
 window.onload = () => {
-	if (preloader !== null) setTimeout(loadingOff, 100);
+	if (preloader !== null) {
+		// si exite  preloader  entonces quitelo
+		setTimeout(loadingOff, 100);
+	}
 };
 
 /*--------------------------------------------------------------
@@ -70,4 +73,17 @@ sidebarCollapse
 sidebarCollapse.style.cursor = 'pointer';
 sidebarCollapse.addEventListener('click', () => {
 	document.body.classList.toggle('sideBarcollapse');
+});
+
+/*--------------------------------------------------------------
+toogle bet show and hide on click date
+--------------------------------------------------------------*/
+const toogleBets = function (e) {
+	if (e.target.parentElement.classList.contains('date')) {
+		e.target.parentElement.parentElement.classList.toggle('show');
+	}
+};
+//por cada uno que hay ponga un listener
+toogleBet.forEach(function (item) {
+	item.addEventListener('click', e => toogleBets(e));
 });
